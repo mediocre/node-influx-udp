@@ -23,6 +23,8 @@ Where to get this
 
 How to use this
 ---------------
+Configure InfluxDB for UDP: http://influxdb.com/docs/v0.7/api/reading_and_writing_data.html#writing-data-through-json-+-udp
+
 ```javascript
 
 var InfluxUdp = require('../influx-udp/index');
