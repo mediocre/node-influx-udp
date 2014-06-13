@@ -1,0 +1,11 @@
+{
+    "description": "UDP-based write utility for InfluxDB",
+    "dependencies": {
+        "lodash": "^2.4.1"
+    }
+    "keywords": ["influx", "influxdb", "udp" ],
+    "main": "./lib",
+    "name": "mehdown",
+    "repository": "git://github.com/mediocre/influx-udp.git",
+    "version": "1.0.0"
+}
