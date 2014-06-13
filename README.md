@@ -27,7 +27,7 @@ Configure InfluxDB for UDP: http://influxdb.com/docs/v0.7/api/reading_and_writin
 
 ```javascript
 
-var InfluxUdp = require('../influx-udp/index');
+var InfluxUdp = require('influx-udp');
 
 var influxClient = new InfluxUdp({
     port: 4444,
