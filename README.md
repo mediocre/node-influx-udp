@@ -46,8 +46,8 @@ var data = {
 }
 
 influxClient.send(data);
-/* Sends this, which will put two points into the "visitors" time series:
 
+/* Sends this, which will put two points into the "visitors" time series:
 [
     {
         "name": "visitors",
@@ -58,7 +58,6 @@ influxClient.send(data);
         ]
     }
 ]
-
 */
 
 ```
