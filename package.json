@@ -7,6 +7,6 @@
     "license": "Apache-2.0",
     "main": "./lib",
     "name": "influx-udp",
-    "repository": "git://github.com/mediocre/influx-udp.git",
-    "version": "1.0.0"
+    "repository": "git://github.com/mediocre/node-influx-udp.git",
+    "version": "1.0.1"
 }
