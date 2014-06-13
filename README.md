@@ -1,4 +1,4 @@
-influx-udp
+node-influx-udp
 ==========
 
 What
