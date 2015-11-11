@@ -1,12 +1,12 @@
 {
     "description": "UDP-based write utility for InfluxDB",
     "dependencies": {
-        "lodash": "2.4.x"
+        "lodash": "3.10.x"
     },
     "keywords": ["influx", "influxdb", "udp" ],
     "license": "Apache-2.0",
     "main": "./lib",
     "name": "influx-udp",
     "repository": "git://github.com/mediocre/node-influx-udp.git",
-    "version": "1.0.1"
+    "version": "2.0.0"
 }
