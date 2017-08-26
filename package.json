@@ -3,6 +3,13 @@
     "dependencies": {
         "lodash": "3.10.x"
     },
+    "devDependencies": {
+        "mocha": "2.0.1",
+        "mock-udp": "0.1.1"
+    },
+    "scripts": {
+        "test": "mocha --ui qunit --reporter list --bail --check-leaks test/index.js"
+    },
     "keywords": ["influx", "influxdb", "udp" ],
     "license": "Apache-2.0",
     "main": "./lib",
