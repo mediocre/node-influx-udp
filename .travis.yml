@@ -12,3 +12,9 @@ node_js:
   - 6
   - 7
   - 8
+
+ notifications:
+   slack:
+     rooms:
+       - secure: "j1lMyugk8LysW+JZhPyyKhd9n6crIVi5j6aRJHY9FdcifbCtitp8a62KJh1bTUOqMW8A5uktNK+z6F4Zx3I4vWYa7K+6qlCP/1AxoNFfVzdImBeqR9eN3q4BGP6kw3x06xYJNY8Y/uqeOjdy9BhR9f5A2pj/YQ6jUWmH9d5I6zQ="
+     on_success: always
