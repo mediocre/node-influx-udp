@@ -1,7 +1,7 @@
 # node-influx-udp
 
 [![Build Status](https://travis-ci.org/mediocre/node-influx-udp.svg?branch=master)](https://travis-ci.org/mediocre/node-influx-udp)
-
+[![Coverage Status](https://coveralls.io/repos/github/mediocre/node-influx-udp/badge.svg?branch=master)](https://coveralls.io/github/mediocre/node-influx-udp?branch=master)
 
 What
 ----
