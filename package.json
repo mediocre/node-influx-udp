@@ -4,13 +4,20 @@
         "lodash": "3.10.x"
     },
     "devDependencies": {
-        "mocha": "2.0.1",
+        "coveralls": "*",
+        "istanbul": "*",
+        "mocha": "*",
         "mock-udp": "0.1.1"
     },
     "scripts": {
+        "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
         "test": "mocha --ui qunit --reporter list --bail --check-leaks test/index.js"
     },
-    "keywords": ["influx", "influxdb", "udp" ],
+    "keywords": [
+        "influx",
+        "influxdb",
+        "udp"
+    ],
     "license": "Apache-2.0",
     "main": "./lib",
     "name": "influx-udp",
