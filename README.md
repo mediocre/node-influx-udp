@@ -1,5 +1,7 @@
-node-influx-udp
-==========
+# node-influx-udp
+
+[![Build Status](https://travis-ci.org/mediocre/node-influx-udp.svg?branch=master)](https://travis-ci.org/mediocre/node-influx-udp)
+
 
 What
 ----
