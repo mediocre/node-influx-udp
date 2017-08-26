@@ -11,7 +11,8 @@
     },
     "scripts": {
         "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-        "test": "mocha --ui qunit --reporter list --bail --check-leaks test/index.js"
+        "test": "mocha --ui qunit --reporter list --bail --check-leaks test/index.js",
+        "fixlint": "eslint lib --ext .js --fix"
     },
     "keywords": [
         "influx",
