@@ -6,12 +6,12 @@ var InfluxUdp = require('../');
 suite('influx-udp');
 
 test('should send a single data point via UDP', function(done) {
-   var influx_udp = new InfluxUdp({
-     host: 'example.com',
-     port: '8086',
-     protocol: 'line',
-     reportTime: true
-   });
+    var influx_udp = new InfluxUdp({
+        host: 'example.com',
+        port: '8086',
+        protocol: 'line',
+        reportTime: true
+    });
 
     var scope = mock_udp('example.com:8086');
 
@@ -35,12 +35,12 @@ test('should send a single data point via UDP', function(done) {
 });
 
 test('should properly format typed values', function(done) {
-   var influx_udp = new InfluxUdp({
-     host: 'example.com',
-     port: '8086',
-     protocol: 'line',
-     reportTime: true
-   });
+    var influx_udp = new InfluxUdp({
+        host: 'example.com',
+        port: '8086',
+        protocol: 'line',
+        reportTime: true
+    });
 
     var scope = mock_udp('example.com:8086');
 
@@ -64,12 +64,12 @@ test('should properly format typed values', function(done) {
 });
 
 test('should send a single data point via UDP-json', function(done) {
-   var influx_udp = new InfluxUdp({
-     host: 'example.com',
-     port: '8086',
-     protocol: 'json',
-     reportTime: true
-   });
+    var influx_udp = new InfluxUdp({
+        host: 'example.com',
+        port: '8086',
+        protocol: 'json',
+        reportTime: true
+    });
 
     var scope = mock_udp('example.com:8086');
 
@@ -103,21 +103,21 @@ test('should send a single data point via UDP-json', function(done) {
 });
 
 test('writePoints method behaves like in node-influx', function(done) {
-   var influx_udp = new InfluxUdp({
-     host: 'example.com',
-     port: '8086',
-     protocol: 'line'
-   });
+    var influx_udp = new InfluxUdp({
+        host: 'example.com',
+        port: '8086',
+        protocol: 'line'
+    });
 
     var scope = mock_udp('example.com:8086');
 
     // example from https://github.com/node-influx/node-influx#writepoints
     var points = [
-      [{ value: 232 }, { tag: 'foobar' }],
-      [{ value: 212 }, { someothertag: 'baz' }],
-      [123, { foobar: 'baz' }],
-      [{ value: 122, time: 1234567 }]
-  ];
+        [{ value: 232 }, { tag: 'foobar' }],
+        [{ value: 212 }, { someothertag: 'baz' }],
+        [123, { foobar: 'baz' }],
+        [{ value: 122, time: 1234567 }]
+    ];
 
     influx_udp.writePoints('seriesname', points);
 
